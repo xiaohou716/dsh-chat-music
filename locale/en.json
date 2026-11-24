@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "DeepSeek record player",
+    "description": "A draggable floating music player over the whole frame. Drop a folder of audio files onto the import area to build a playlist, then use previous / play-pause / next, drag the seek bar, and watch the live audio visualizer. Everything stays in your browser: files are read locally with object URLs and never uploaded."
+  }
+}
