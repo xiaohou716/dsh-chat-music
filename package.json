@@ -1,0 +1,51 @@
+{
+  "name": "dsh-chat-music",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DeepSeek record player: a draggable floating music player in DSH. Drop a folder of audio files to play it, with play/pause, seek, next/previous and a live audio visualizer.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "icon": "./icon.svg",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "music",
+    "player",
+    "visualizer"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaohou716/dsh-chat-music.git"
+  },
+  "homepage": "https://github.com/xiaohou716/dsh-chat-music#readme",
+  "bugs": {
+    "url": "https://github.com/xiaohou716/dsh-chat-music/issues"
+  }
+}
